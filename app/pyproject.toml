@@ -1,0 +1,40 @@
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 79
+skip_glob = [
+  "*/.pytest_cache/*",
+  "*/__pycache__/*",
+
+]
+
+
+[tool.black]
+line-length = 79
+target-version = ['py311']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | \.pytest_cache
+  | _build
+  | build
+  | dist
+  | migrations
+  \.toml
+  |\.sh
+  |\.ini
+  |Dockerfile
+  |Jenkinfile
+)/
+'''
+
+[tool.flake8]
+--max-line-length=79
+
+[tool.pylint."messages control"]
+disable = ["try-except-raise","no-value-for-parameter","line-too-long", "missing-module-docstring", "missing-class-docstring", "missing-function-docstring", "import-error", "no-name-in-module", "too-few-public-methods", "duplicate-code"]
