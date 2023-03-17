@@ -1,0 +1,17 @@
+[flake8]
+ignore = W503, W504
+exclude =
+    .tox,
+    .git,
+    __pycache__,
+    .pytest_cache
+    build,
+    dist,
+    *.pyc,
+    *.egg-info,
+    .cache,
+    .eggs,
+    *migrations*
+max-complexity = 15
+max-line-length = 79
+application-import-names = flake8
