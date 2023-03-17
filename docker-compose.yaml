@@ -1,0 +1,12 @@
+version: "3.11"
+
+services:
+
+  raiz:
+    image: paint_mall_service:0.1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    restart: always
