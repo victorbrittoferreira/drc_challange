@@ -5,7 +5,7 @@ services:
   raiz:
     image: paint_mall_service:0.1
     build:
-      context: .
+      context: ./app
       dockerfile: Dockerfile
     ports:
       - "5000:5000"
