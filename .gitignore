@@ -130,3 +130,6 @@ dmypy.json
 .vscode/settings.json
 .vscode/launch.json
 todo.txt
+app/.vscode/launch.json
+app/.vscode/settings.json
+app/deposito.py
