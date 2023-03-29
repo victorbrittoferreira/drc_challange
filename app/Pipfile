@@ -8,16 +8,18 @@ fastapi = "*"
 uvicorn = "*"
 
 [dev-packages]
+pylint = "*"
+python-dotenv = "*"
 safety = "*"
 httpx = "*"
 black = "*"
-pylint = "*"
 isort = "*"
 flake8 = "*"
 pre-commit = "*"
 mypy = "*"
 pytest = "*"
 coverage = "*"
+autopep8 = "*"
 
 [requires]
 python_version = "3.11"

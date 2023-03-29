@@ -1,0 +1,12 @@
+.venv/
+**/__pycache
+**/__pytest_cache
+.vscode
+htmlcov
+.env
+Dockerfile
+.git
+notes.txt
+test.py
+old/
+todo
