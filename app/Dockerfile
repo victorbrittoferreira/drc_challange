@@ -20,7 +20,7 @@ WORKDIR /paint_mall_service
 
 # install dependencies
 COPY requirements.txt requirements.txt
-RUN pip install --upgrade pip
+# RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 # copy project
