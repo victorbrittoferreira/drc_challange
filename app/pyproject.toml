@@ -29,7 +29,6 @@ exclude = '''
   |\.sh
   |\.ini
   |Dockerfile
-  |Jenkinfile
 )/
 '''
 
@@ -37,4 +36,14 @@ exclude = '''
 --max-line-length=79
 
 [tool.pylint."messages control"]
-disable = ["try-except-raise","no-value-for-parameter","line-too-long", "missing-module-docstring", "missing-class-docstring", "missing-function-docstring", "import-error", "no-name-in-module", "too-few-public-methods", "duplicate-code"]
+disable = [
+  "try-except-raise",
+  "no-value-for-parameter",
+  "missing-module-docstring",
+  "missing-class-docstring",
+  "missing-function-docstring",
+  "import-error",
+  "no-name-in-module",
+  "too-few-public-methods",
+  "duplicate-code"
+]
