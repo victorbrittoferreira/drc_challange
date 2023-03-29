@@ -2,8 +2,10 @@ version: "3.11"
 
 services:
 
-  raiz:
+  paint_mall_service:
     image: paint_mall_service:0.1
+    container_name: paint_mall_service_api
+    hostname: paint_mall_service
     build:
       context: ./app
       dockerfile: Dockerfile
