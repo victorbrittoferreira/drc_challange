@@ -24,7 +24,6 @@
 
 >[Safety Report](#safety-report)
 
->[More resources](#more-resources)
 
 ---
 ## Motivation
@@ -63,16 +62,22 @@ a list of commonly available paint can sizes.
 allowing even those with no prior experience in painting to accurately
 calculate the required amount of paint for their room.
 ```
-```md
-![Reseponse Report of geometric inconsistencies](assets/images/error_response_analyzing_invalid_dimensions.png)
-```
 
-```md
-![Response number of cans needed](assets/images/sucess_response_return_amount_paint_cans.png)
-```
+* **An example of a successful response when sending  data  correct measurements of a room**
+
+![Response number of cans needed](./app/assets/images/sucess_response_return_amount_paint_cans.png)
+
+* **An example of an unsuccessful response when sending incorrect or inconsistent measurement data from a room**
+
+![Reseponse Report of geometric inconsistencies](./app/assets/images/error_response_analyzing_invalid_dimensions.png)
+
+* **You can also access via browser and have a more friendly interaction via Swagger.**
+
+![Swagger FastAPI OpenAPI](./app/assets/images/swagger_fastapi_openapi.png)
+
 
 ---
->[Back to sumary](#summary)
+>[Back to Table of Contents](#table-of-contents)
 
 ## Requirements
 * **[Python](https://www.python.org/)**
@@ -81,7 +86,7 @@ calculate the required amount of paint for their room.
 
 ---
 ## Running instructions
-
+Run the follow cli in root folder, ./app
 ```console
 docker-compose build
 docker-compose up
@@ -110,7 +115,6 @@ docker-compose up
 │   │   │       │   ├── room_analyzer_paint_cans.py
 │   │   │       │   └── router.py
 │   │   ├── controllers
-│   │   │   ├── __init__ .py
 │   │   │   ├── main_controller.py
 │   │   │   ├── paint_cans_needed_coordinator.py
 │   │   ├── schemas
@@ -166,6 +170,7 @@ docker-compose up
 ├── Pipfile
 └── README.md
 ```
+>[Back to Table of Contents](#table-of-contents)
 ---
 ## Test Coverage
 
@@ -231,7 +236,7 @@ tests/unit/services/test_room_validator.py                               86     
 TOTAL                                                                   859     44    95%
 ```
 
->[Back to sumary](#summary)
+>[Back to Table of Contents](#table-of-contents)
 
 
 ## Safety Report
