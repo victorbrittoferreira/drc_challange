@@ -6,14 +6,11 @@ from src.api.factory import create_api
 api = create_api()
 
 if __name__ == "__main__":
-    # logging.basicConfig(level="DEBUG")
     uvicorn.run(
         "run:api",
-        # host=ApiConfig.SERVER_HOST,
-        host="0.0.0.0",
-        # port=ApiConfig.SERVER_PORT,
-        port=5000,
+        host=ApiConfig.SERVER_HOST,
+        port=ApiConfig.SERVER_PORT,
         reload=ApiConfig.RELOAD_API,
-        log_level="debug",
-        workers=1,
+        log_level=ApiConfig.LOG_LEVEL,
+        workers=ApiConfig.WORKERS,
     )
